@@ -1,0 +1,243 @@
+@import url('card.css');
+@import url('darkmode.css');
+@import url('collapsible.css');
+
+
+#theme-switch {
+	height: 40px;
+	width:40px;
+	padding: 0;
+	border-radius: 50%;
+	background-color: var(--theme-switch-bg);
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top:5px;
+	right:5px;
+	text-decoration: none;
+	z-index: 11;
+}
+#theme-switch svg {
+	fill: var(--theme-switch-fill)
+}
+#theme-switch svg:last-child {
+	display:none;
+}
+.darkmode #theme-switch svg:first-child {
+	display: none;
+}
+.darkmode #theme-switch svg:last-child {
+	display:block;
+	padding-left:5px
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--section1-color);
+	margin:0;
+	padding-top:25px;
+	color: var(--text-color)
+}
+footer {
+	border-top-style:solid;
+	border-top-width:3px;
+	display: flex;
+	flex-direction: column;
+}
+iframe {
+	border: none;
+	outline: none;
+	box-shadow: none;
+	width: var(--iframe-width);
+	height: var(--iframe-height);
+}
+h2 {
+	font-size: 35px;
+}
+
+input[type=email] {
+	background-image: url('images/email-envelope.png');
+	background-size:10px;
+	background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left:10px;
+}
+
+#feedback-form {
+	background-color: var(--section1-color);
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top: 10px;
+}
+#feedback-form * {
+	color:var(--text-color);
+}
+#feedback-form label {
+	
+	font-weight: bold;
+}
+#feedback-form button {
+	background-color: var(--feedback-input-bg);
+}
+#feedback-form input {
+	background: var(--feedback-input-bg);
+}
+#feedback-form textarea{
+	background-color: var(--feedback-input-bg);
+}
+
+#selfie {
+	width:80%; 
+	max-width: 50%; 
+	height: 80%;
+	max-height: 50%; 
+	margin-left:auto; 
+	margin-right:auto; 
+	display:block; 
+	padding-bottom: 10px;
+}
+#navigation-bar {
+  background-color: var(--navbar-bg);
+  overflow: hidden;
+  top: 0;
+  position:fixed;
+  width:100%;
+  z-index: 10;
+}
+#navigation-bar a {
+  float: left;
+  color: var(--navbar-text);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navigation-bar a:hover {
+  background-color: var(--navbar-hover-bg);
+  color: var(--navbar-hover-text);
+}
+#contact {
+	font-size: 30px;
+	margin-left:auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top:0;
+}
+#projects, #work, #feedback {
+	scroll-margin-top: 60px;
+}
+
+.flex-row {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.flex-row-description {
+	padding-left:15px;
+	padding-right:15px;
+	max-width: 50%;
+	font-size: 20px;
+}
+.flex-row-media {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	
+}
+
+.flex-row-text {
+	margin-left: auto;
+	margin-right: auto;
+	padding:40px
+}
+
+@media (max-width: 1300px) { /* Should be around the width of the largest iframe flex-row-media */
+	.flex-row-description {
+	  max-width: 100%;
+	  padding: 10px;
+	}
+	
+	.flex-row-media {
+		max-width: 95%;
+	}
+
+	.flex-row-text {
+		padding: 15px;
+	}
+
+	.flex-row-iframe {
+		width:80%;
+	}
+}
+
+
+.title-header {
+ font-size: 65px;
+ text-align: center;
+ text-decoration: underline overline;
+ text-decoration-thickness: 2px;
+ padding-top: 10px;
+ margin-top: 0;
+}
+.title-header + .description {
+ display:block;
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+ padding-bottom:20px;
+ font-size:30px;
+ padding-left: 50px;
+ padding-right: 50px;
+}
+
+.section1 {
+	padding-top: 30px;
+	padding-bottom: 15px;
+	margin-bottom:15px;
+	display: flex;
+	flex-direction: column;
+}
+.section2 {
+	background-color: var(--section2-color);
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom:15px;
+	display: flex;
+	flex-direction: column;
+}
+.section h2 {
+	padding-left: 0px;
+	margin-left:10px;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	margin-right:50%;
+}
+
+.hidden-default {
+	text-decoration: underline;
+	color:var(--text-color);
+}
+.hidden-default:hover{
+	text-decoration: underline;
+	color:var(--link-hover-text);
+}
+.header {
+	margin-top:0px;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	border-bottom-right-radius: 40%;
+}
+
+.project-header {
+	font-size: 30px;
+	display:block;
+	font-weight: bold;
+}
+

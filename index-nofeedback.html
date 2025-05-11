@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="personal.css">
+	<script type="text/javascript" src="darkmode.js" defer></script>
+	<script type="text/javascript" src="send-email-request.js" defer></script>
+	<script type="text/javascript" src="collapsible.js" defer></script>
+	<title>Jacob Amisano</title>
+</head>
+<body id="body">
+	<div id="navigation-bar"> 
+		<a href="#body">Home</a>
+	    <a href="#projects">Projects</a>
+	    <a href="#work">Work</a>
+	    <a href="#feedback">Feedback</a>
+		
+	</div>
+	<button id="theme-switch">
+		<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+		<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+	</button>
+	<div class="section1">
+		<h1 class="title-header">Jacob Amisano</h1>
+		<p class="description">
+			Hello, and welcome to my website showcasing some of my accomplishments and expierence. I'm currently studying at The University of Nebraska-Lincoln to obtain a Bachelor degree for Software Engineering graduating in december 2025. Below i've included overviews for some of my projects and work expierence.
+		</p>
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img style="width: 450px; height: 300px;"  src="images/VR_selfie.jpg" alt="Jacob Amisano image">
+				</div>
+				<div class="flip-card-back">
+					<h1>Jacob Amisano</h1>
+					<p>Software Engineer / VR enthusiast</p>
+					<p><i>SRC: UNL Senior Design Showcase 2024-2025 | UNMC CoN Journey Through the Kidney</i></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section2">
+		<h1 class="title-header" id="projects">Projects</h1>
+		<p class="description">
+			Below are some of the projects I've developed, both alone and in groups. If a project was developed by multiple people including myself, it will be specified in the description of the project. If you are a prospective employer and have any questions regarding any of my projects listed below, feel free to reach out to me using my contact information available at the bottom of the page.
+		</p>
+		<div class="section" >
+			<h2><a href="https://github.com/AbyssmalGame/Abyssmal" class="hidden-default" target="blank">Abyssmal - VR Game</a> - <i>March 2025-May 2025</i></h2>
+			<div class="flex-row">
+				<span class="flex-row-description">
+					Abyssmal is an underwater survival horror game with some roguelike elements that was developed in Spring 2025. This project was a collaborative effort between myself, 2 other computing students,
+					and two art students focusing on making the models, animations, audio and terrain. This was a great expereince and really put into perspective time constraints while planning our project. 
+					On average close to 15 hours a week were spent working on this project.
+					<br><br>
+					The game is developed using Unity and Steam VR and has features such as omni-directional simulated swimming movement, upgradeable stats and weapons to help the player survive, 
+					and an oxygen timer for how long they can be in a level. The goal of the game is to find your research partner who was lost at sea. As you progress deeper through a variety of levels, 
+					the player is introduced to story elements and new enemies to keep them on their toes. 
+					<br><br>
+					A wide variety of enemies exist in the game and follow one of three formats being a swimming-melee, swimming-ranged, or ground-melee. Each of the swimming enemies have omnidirectional movement
+					and track the player. When the player enters their range, they begin to attack whether that be a delayed melee dash attack, or particle-system based ranged attack dealing damage over time. 
+					We wanted the player to have fun avoiding the enemies, so our main way to avoid damage is utilizing the movemnt built in swimming around to avoid enemies as they get close. 
+					<br><br>
+					The main features I worked on were implementing menu functionality, weapons (and a custom reloading feature), handling damage between weapons and enemies along with handling their deaths. 
+					Weapons shoot out new projectiles that self destroy after a few seconds or on collision. For our reloading functionality, an ammo pouch follows the player's hip, that when interacted with 
+					their left hand spawns in a magazine for the equipped object. My favorite, the APS Rifle, is setup so the magazine also ejects when it empties or introducing a new magazine when it is below full.
+				</span>
+				
+				<div class="flip-card" style="width:450px; height:450px;">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img style="width: 450px; height: 450px;"  src="images/abyssmal.jpeg" alt="Jacob Amisano image">
+						</div>
+						<div class="flip-card-back">
+							<h1>Kraken Enemy</h1>
+							<p><i>SRC: Abyssmal level 5.</i></p>
+							<p>This is our "boss" enemy. Our initial plan was to try and have a stealth-based leviathan enemy for the final two levels, however that ended up getting cut and replaced
+								by the kraken due to time constraints.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+			<br><button type="button" class="collapsible">More info...</button>
+			<div class="collapsible-content">
+				<span>
+					<br>
+					A trailer and gameplay video are currently under development. When we get those released, I'll update this to include links to those.<br>
+					<br>
+				</span>
+			</div>
+
+			<!--UNMC PROJECT-->
+			<h2>UNMC College of Nursing Journey Through the Kidney - <i>August 2024-May 2025</i></h2>
+			<div class="flex-row">
+				<span class="flex-row-description">
+					The Journey through the kidney project was developed for UNMC, <a href="https://www.xrenegades.com/about" class="hidden-default" target="_blank">XRenegades</a>, and 
+					<a href="https://curioxr.org/" class="hidden-default" target="_blank">Curio XR</a> as a part of my seecond senior capstone project by myself and 5 other computing students. 
+					We aimed to build upon the previous year's <a href="https://www.youtube.com/watch?v=DlfDeU-TETE" class="hidden-default" target="_blank">Heart Tour project</a> by implementing 
+					an immersive tour throughout the kidney and nephron. This project was developed using Unity and the Open XR VR development plugin.
+					<br><br>
+					Our project is exclusively hand-tracking based, so controllers aren't needed. A peace sign gesture is used to move forward and backwards depending on whether its facing away or towards the player.
+					A pinching gesture with an open palm can be used to interact with our "Checkpoint Orbs" placed throughout the tour that have a description of the player's location, key for particles present, and 
+					mini-models for both the kidney and nephron. Each of these mini-models are moveable by the player, and show the player's current location in the respective model. Throughout the tour particles
+					such as proteins, water, blood cells, and waste are present and change depending on the location.
+					<br><br>
+					The checkpointed parts of the tour include the Renal Artery, Arterioles, Peritubular Capillaries, Glomerulus, Proximal Tubule, Descending/Ascending Loop of Henle, Distal Tubule, Collecting Duct, 
+					Aquaporins, Bladder, and Active Transport. 
+				</span>
+				
+				<div class="flip-card" style="width: 540px; height: 361px;">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img style="width: 540px; height: 361px;"  src="images/UNMC-Showcase2.jpg" alt="UNMC Showcase">
+							
+						</div>
+						<div class="flip-card-back">
+							<h1>User Playing our Tour</h1>
+							<p><i>SRC: UNL Senior Design Showcase 2024-2025</i></p>
+							<p>
+								Here you can see one of our players going through our tour using a peace sign gesture to move forward near the start of the kidney.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<br><button type="button" class="collapsible">More info...</button>
+			<div class="collapsible-content">
+				<span>
+					<br>
+					Our presentation video is currently being edited by the school. I'll post it here once it's finalized.<br>
+					<br>
+					Also Uretors would normally be between the collecting duct and bladder, but due to time constraints our project didn't account for these.
+					<br><br>
+				</span>
+			</div>
+			<!--END UNMC PROJECT-->
+
+
+
+			<h2>Warmle</h2>
+			<div class="flex-row">
+				<span class="flex-row-description"> 
+					Warmle is a website developed as a part of my software architecture course co-developed with 4 other students. The goal of the site is to provide a two player alternative to the popular game Wordle. In this setting one player inserts a word, while the other player is trying to guess it. As the second player guesses, they're given feedback in the form of red and blue colors on each letter following the idea of warmer (more red) being better than cold.
+				</span>
+
+				<img style="width:700px" src="images/warmle.PNG" class="flex-row-media"/>
+			</div>
+
+			<h2>Know Your Well 2.0</h2>
+			<div class="flex-row">
+				<span class="flex-row-description">
+					The Know Your Well 2.0 app was developed for Nebraska Water Center as a part of my 2023-2024 senior design project. This is my first of two projects. The application utilzes a variety of technologies but is primarily web based and is in the form of a progressive web application (PWA) allowing the user to install a local variant on their phone. The apps' primary function is to allow students and teachers enter water-well information to then be stored on an Azure backend. This information is then used by Know Your Well as a centralized source of information as they recieve water samples from other sources for said wells. Some of the features my team implemented include Single Sign On (SSO), Offline handling, CSV exporting for files, searching existing well entries, and many more.
+				</span>
+
+				<iframe src="https://www.youtube.com/embed/7w1_GLatVOU" class="flex-row-media flex-row-iframe"></iframe> 		
+
+			</div>
+
+			<h2>Lincoln Weather App</h2>
+			<div class="flex-row">
+				<span class="flex-row-description"> 
+					The Lincoln weather app was developed as a part of my final project for Meteorology 100 in my sophmore year of college. The goal of this project was to have an automated determination output for sports such as football, baseball, and soccer. The application uses hard-coded coordinates of popular lincoln stadiums such as [INSERT STADIUMS HERE] to send a request to the OpenWeather Connector API which returns weather data for these locations. The application then uses an algorithm to rate the given weather for the sport as "Good", "Great", "Bad", or "Canceled" and returns a screen with these ratings with their respective sports. Within this project I collaborated with 4 other students. I was responsible for helping with the visual elements of this project which can be preiviewed below.
+				</span>
+
+				<image style="width:500px" src="images/weather.png" class="flex-row-media">
+
+			</div>
+
+
+
+			<h2>Personal JS Library</h2>
+			<div class="flex-row">
+				<span class="flex-row-description">
+					This is a personal Javascript library currently under development aimed to provide a central hub for a variety of common programming practices ranging from ADT implementation to common algorithms such as tree searches. While developing this library, i've aimed to keep things abstract and modular for ease of use in both development and testing. This project has been a great help, not only having this implementation at hand, but has also helped me grow my understanding of more advanced algorithms through implementing and testing for validity. 
+				</span>
+
+				<img height="343" width="157" src="images/Clownup.png" class="flex-row-media"/>
+			</div>
+		</div>
+	</div>
+
+	<div class="section1">
+		<h1 class="title-header" id="work">Work Experience</h1>
+		<p class="description">
+			I hope to expand my knowledge over software development fields through a variety of internships while pursuing my degree in Software Engineering from The University of Nebraska-Lincoln.
+		</p>
+		<div class="section flex-row">
+			<h2>Ameritas: <i>Identity Security Intern</i></h2>
+			<span class="flex-row-text">
+				At Ameritas, I've had the opportunity to develop several processes and improve upon existing workflows to help with automation inside their Identity Access Management (IAM) system. Through some of these projects I've been able to improve my knowledge over IAM principles, Azure, and common languages such as JavaScript, XML, and Powershell.
+			</span> 
+			<h2>Firespring: <i>Software Engineering Intern</i></h2>
+			<span class="flex-row-text">
+				While working at Firespring, I was responsible for completing stories directly correlated to their Agile Scrum process for their main development platform. I mainly worked to fix bugs within their development platform and client portal. I collaborated with 9 other team members on the development team. 
+			</span>
+			<h2>Woodlands at Hillcrest: <i>Server</i></h2>
+			<span class="flex-row-text">
+				<i>The Woodlands at Hillcrest has rebranded to Aviva Woodlands after I left.</i>
+				<br><br>
+				While at the woodlands my responsibilities included but were not limited to, cleaning, serving residents, communicating efficiently with coworkers, and serving residents. The Woodlands was an amazing experience for me, between my coworkers, 
+
+			</span>
+		</div>
+	</div>
+
+	<div class="section2">
+		<h1 class="title-header" id="feedback">Feedback</h1>
+		<p class="description">
+			Please feel free to contact me at jacob.portfolio.mailserver@gmail.com with any questions, comments, or concerns. Normally I'd have a form input sending emails, but due to hosting
+			constraints I currently can't.
+		</p>
+	</div>
+</body>
+</html>
