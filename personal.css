@@ -165,7 +165,8 @@ input[type=email] {
 	}
 	
 	.flex-row-media {
-		max-width: 95%;
+		max-width: 100%;
+		height:auto;
 	}
 
 	.flex-row-text {
